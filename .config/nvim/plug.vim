@@ -9,6 +9,14 @@ Plug 'tpope/vim-rhubarb'
 
 if has("nvim")
 
+" nvim-lsp-installerからmason.nvimへ移行
+  Plug 'williamboman/mason.nvim'
+  Plug 'williamboman/mason-lspconfig.nvim'
+  Plug 'neovim/nvim-lspconfig'
+" =====================================
+"   Plug 'neovim/nvim-lspconfig'
+"   Plug 'williamboman/nvim-lsp-installer'
+" =====================================
   Plug 'hoob3rt/lualine.nvim'
   Plug 'kristijanhusak/defx-git'
   Plug 'kristijanhusak/defx-icons'
@@ -49,10 +57,11 @@ if has("nvim")
   Plug 'rgroli/other.nvim'
   Plug 'lukas-reineke/indent-blankline.nvim'
   Plug 'mhinz/vim-grepper', { 'on': ['Grepper', '<plug>(GrepperOperator)'] }
-  Plug 't9md/vim-quickhl'
+"   Plug 't9md/vim-quickhl'
   Plug 'jsborjesson/vim-uppercase-sql'
   Plug 'simeji/winresizer'
   Plug 'ajmwagar/vim-deus'
+  Plug 'nvim-lua/plenary.nvim'
 else
   Plug 'Shougo/defx.nvim'
   Plug 'roxma/nvim-yarp'
